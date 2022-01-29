@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "biginteger",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "listImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "post.list-image"
+    }
+  }
+}

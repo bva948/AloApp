@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/getPosts",
+      "handler": "post.find",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/getByid",
+      "handler": "post.findById",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/posts/count",
+      "handler": "post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/posts/:id",
+      "handler": "post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/posts",
+      "handler": "post.create",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/posts/:id",
+      "handler": "post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/posts/:id",
+      "handler": "post.delete",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    }
+  ]
+}

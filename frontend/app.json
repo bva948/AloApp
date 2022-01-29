@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "ZaloFake",
+    "slug": "zalo-fake",
+    "description": "ZaloFake",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/zalo.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow my-project to access your photos",
+        "NSCameraUsageDescription": "Allow my-project to access your microphone",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/zalo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.tinhmt.zalofake"
+    },
+    "web": {
+      "favicon": "./assets/zalo.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow my-project to access your photos",
+          "cameraPermission": "Allow my-project to access your microphone"
+        }
+      ]
+    ]
+  }
+}

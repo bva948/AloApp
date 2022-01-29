@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/like-posts",
+      "handler": "like-post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/like-posts/count",
+      "handler": "like-post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/like-posts/:id",
+      "handler": "like-post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/like-posts",
+      "handler": "like-post.create",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/like-posts/:id",
+      "handler": "like-post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/like-posts/:id",
+      "handler": "like-post.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

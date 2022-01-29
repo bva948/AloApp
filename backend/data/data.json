@@ -1,0 +1,18 @@
+{
+  "homepage": {
+    "seo": {
+      "metaTitle": "Home",
+      "metaDescription": "This is homepage.",
+      "shareImage": null
+    }
+  },
+  "global": {
+    "siteName": "Global CMS",
+    "defaultSeo": {
+      "metaTitle": "Global CMS",
+      "metaDescription": "A global CMS description.",
+      "shareImage": null
+    },
+    "favicon": null
+  }
+}

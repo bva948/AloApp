@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "name": "Message",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roomchatId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "senderId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": false
+    },
+    "unRead": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

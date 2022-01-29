@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/register",
+      "handler": "users-zalo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/getFriendInfo",
+      "handler": "users-zalo.getFriendInfo",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/findByPhone",
+      "handler": "users-zalo.findByPhone",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/forgotPassword",
+      "handler": "users-zalo.forgotPassword",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/login",
+      "handler": "users-zalo.login",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/logout",
+      "handler": "users-zalo.logout",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/users-zalo/changePassword",
+      "handler": "users-zalo.changePassword",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/users-zalos",
+      "handler": "users-zalo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/users-zalos/count",
+      "handler": "users-zalo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/users-zalos/:id",
+      "handler": "users-zalo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/users-zalos/:id",
+      "handler": "users-zalo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/users-zalos/:id",
+      "handler": "users-zalo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

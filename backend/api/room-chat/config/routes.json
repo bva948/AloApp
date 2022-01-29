@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/room-chats/findById",
+      "handler": "room-chat.findById",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-chats",
+      "handler": "room-chat.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-chats/count",
+      "handler": "room-chat.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-chats/:id",
+      "handler": "room-chat.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/room-chats",
+      "handler": "room-chat.create",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/room-chats/:id",
+      "handler": "room-chat.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/room-chats/delete",
+      "handler": "room-chat.delete",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    }
+  ]
+}

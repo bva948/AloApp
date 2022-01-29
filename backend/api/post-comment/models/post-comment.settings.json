@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_comments",
+  "info": {
+    "name": "PostComment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pid": {
+      "type": "biginteger",
+      "required": true
+    },
+    "uid": {
+      "type": "biginteger",
+      "required": true
+    },
+    "comment": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/request-add-friends/findById",
+      "handler": "request-add-friend.findById",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/request-add-friends/getRequestAddFriend",
+      "handler": "request-add-friend.getRequestAddFriend",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/request-add-friends",
+      "handler": "request-add-friend.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/request-add-friends/count",
+      "handler": "request-add-friend.count",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/request-add-friends/:id",
+      "handler": "request-add-friend.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/request-add-friends",
+      "handler": "request-add-friend.create",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/request-add-friends/:id",
+      "handler": "request-add-friend.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/request-add-friends/:id",
+      "handler": "request-add-friend.delete",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_chats",
+  "info": {
+    "name": "RoomChat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "members": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

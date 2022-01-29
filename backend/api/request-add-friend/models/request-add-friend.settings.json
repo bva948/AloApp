@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "request_add_friends",
+  "info": {
+    "name": "RequestAddFriend",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "senderId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "reciverId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

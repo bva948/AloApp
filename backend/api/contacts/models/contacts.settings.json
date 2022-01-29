@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contacts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "biginteger",
+      "required": true
+    },
+    "fid": {
+      "type": "biginteger",
+      "required": true
+    },
+    "iswishlist": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "like_posts",
+  "info": {
+    "name": "likePost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "biginteger",
+      "required": true
+    },
+    "pid": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

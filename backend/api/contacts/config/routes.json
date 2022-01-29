@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/contacts/addUserContacts",
+      "handler": "contacts.create",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts/getIsFriend",
+      "handler": "contacts.getIsFriend",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts/findByPhone",
+      "handler": "contacts.findByPhone",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts/deleteUserContacts",
+      "handler": "contacts.deleteUserContacts",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contacts/:id",
+      "handler": "contacts.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts/userWishLists",
+      "handler": "contacts.userWishLists",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contacts/:id",
+      "handler": "contacts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts/getUserContacts",
+      "handler": "contacts.getUserContacts",
+      "config": {
+        "policies": ["global::is-authenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts/getUserContactWishLists",
+      "handler": "contacts.getUserContactWishLists",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contacts",
+      "handler": "contacts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contacts/count",
+      "handler": "contacts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contacts/:id",
+      "handler": "contacts.findOne",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
